@@ -132,7 +132,21 @@ ReferenceError: i is not defined
 
 **agora sim chegamos onde deveríamos!**
 
-O `forEach`, *para cada*, sim parece ser o `for`, mas nao é.
+O `forEach`, *para cada*, sim parece ser o `for`, mas nao é!
+
+anteriormente vimos que o `for` além de podermos "iterar" no *array* ele também pode iterar sem precisar de um. Porém com o `forEach` nós **só podemos iterar em cima de um *array*.**
+
+> Mas isso nao é ruim tio Suissa??
+
+agora irei lhe explicar porque isso na real é **muito** bom!
+
+Um pouco acima vimos que se você usar o `for` com `var` o contador ira "vazar", tudo bem que com `let` isso nao ira acontecer, porém o `for` nao foi feito, especificamente, para iterar em arrays.
+
+Porém ha um caso bem especial quando trabalhamos com o `for` para gerar *arrays*...
+
+
+// continuar
+
 
 ## map
 
