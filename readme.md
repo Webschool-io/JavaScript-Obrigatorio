@@ -127,3 +127,16 @@ ReferenceError: i is not defined
 **Essa foi uma breve introduçao ao `for`, pois ele é o mais conhecido.** agora iremos entrar no mundo *underground* da iteracao!
 
 ![underground](http://ichef.bbci.co.uk/news/660/cpsprodpb/C2CB/production/_89976894_89976893.jpg)
+
+## forEach
+
+**agora sim chegamos onde deveríamos!**
+
+O `forEach`, *para cada*, sim parece ser o `for`, mas nao é.
+
+## map
+
+
+
+
+
