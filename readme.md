@@ -165,11 +165,22 @@ Perceba que agora nao precisamos mais do contador e nem de do teste lógico de p
 
 > Por quê?
 
-Porque ele foi criado especificamente para o *array* tanto que ele vem com o `prototype` do array.
+Porque ele foi criado pensando-se no *array* tanto que ele vem com o `prototype` do array.
 
-É exatamente por estar no `prototype` que podemos chama-lo, como no exemplo acima, além disso podemos encadear outras funções do `prototype` do *array* como:
+É exatamente por estar no `prototype` que podemos chama-lo, como no exemplo acima, porém nao podemos encadear outras funções do `prototype` do *array* como porque o `forEach` nao retorna um *array* novo,
 
-  
+```js
+let numeros = ["um", "dois", "três", "quatro"]
+numeros.forEach(function(numero) {
+  console.log(numero)
+  if (numero === "dois") {
+    numeros.shift()
+  }
+})
+um
+dois
+quatro
+```
 
 ## map
 
