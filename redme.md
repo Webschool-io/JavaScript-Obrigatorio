@@ -1,4 +1,4 @@
-# Hora da Iteraçao!
+# Hora da Iteração!
 
 Uma das coisas que um desenvolvedor mais utiliza diariamente é a **iteração** em Arrays.
 
