@@ -36,7 +36,7 @@ for (var i = 0; i < arr.length; i++) {
 Percebeu que para executarmos o `for` precisamos, basicamente, de 3 coisas:
 
 - instanciaçao: `var i = 0`
-- teste lógico: `i < arr.length`
+- teste lógico de parada: `i < arr.length`
 - contador: `i++`
 
 > Primeiramente quero deixar claro que eles **nao sao obrigatório**, como veremos abaixo:
@@ -142,11 +142,34 @@ agora irei lhe explicar porque isso na real é **muito** bom!
 
 Um pouco acima vimos que se você usar o `for` com `var` o contador ira "vazar", tudo bem que com `let` isso nao ira acontecer, porém o `for` nao foi feito, especificamente, para iterar em arrays.
 
-Porém ha um caso bem especial quando trabalhamos com o `for` para gerar *arrays*...
+Porém ha um caso bem especial quando trabalhamos com o `for` para gerar *arrays* ou fazer os exercícios sobre matriz da faculdade. :p
 
+Sem mais delongas vamos ao código:
 
-// continuar
+```js
+> let arr = [1,2,3,4,5]
+> arr.forEach((element, index) => console.log(element, index))
+1 0
+2 1
+3 2
+4 3
+5 4
+```
 
+O `forEach` sempre recebe esses dois parametros:
+
+- elemento: element
+- índice: index
+
+Perceba que agora nao precisamos mais do contador e nem de do teste lógico de parada.
+
+> Por quê?
+
+Porque ele foi criado especificamente para o *array* tanto que ele vem com o `prototype` do array.
+
+É exatamente por estar no `prototype` que podemos chama-lo, como no exemplo acima, além disso podemos encadear outras funções do `prototype` do *array* como:
+
+  
 
 ## map
 
