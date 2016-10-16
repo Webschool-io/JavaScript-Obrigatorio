@@ -89,11 +89,13 @@ undefined
 ... 
 ```
 
-> Mas tenho boas notícias!
+![Bazinga](http://piratevinyldecals.com/wps/wp-content/uploads/2014/04/Bazinga-PV369.png)
+
+
+> **Mas tenho boas notícias!**
 
 > No ES6 isso nao acontece mais se usarmos o `let`. 
 
-![Bazinga](http://piratevinyldecals.com/wps/wp-content/uploads/2014/04/Bazinga-PV369.png)
 
 ```js
 > let arr = [1,2,3,4,5]
@@ -122,7 +124,6 @@ ReferenceError: i is not defined
 
 ```
 
-
 **Essa foi uma breve introduçao ao `for`, pois ele é o mais conhecido.** agora iremos entrar no mundo *underground* da iteracao!
 
-
+![underground](http://ichef.bbci.co.uk/news/660/cpsprodpb/C2CB/production/_89976894_89976893.jpg)
