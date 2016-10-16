@@ -43,9 +43,71 @@ Percebeu que para executarmos o `for` precisamos, basicamente, de 3 coisas:
 
 
 ```js
-for (var i = 0; i < rr.length; i++) {
-  console.log(rr[i]);
+var i = 0
+for (; i < 5; i++) {
+  console.log(i);
 }
+
 ```
+
+Porém temos um *probleminha* de efeitos colaterais com ele, utilizando o `var` para instanciar o `i` ele ira *vazar* do `for`:
+
+```js
+> var arr = [1,2,3,4,5]
+undefined
+> for (var i = 0; i < arr.length; i++) {
+...   console.log(arr[i]);
+... }
+1
+2
+3
+4
+5
+undefined
+> i
+5
+> i
+5
+> i
+5
+> i
+5
+> WTF?
+... 
+```
+
+> Mas tenho boas notícias!
+
+> No ES6 isso nao acontece mais se usarmos o `let`. 
+
+```js
+> let arr = [1,2,3,4,5]
+undefined
+> for (let i = 0; i < arr.length; i++) {
+...     console.log(arr[i]);
+... }
+1
+2
+3
+4
+5
+undefined
+> i
+ReferenceError: i is not defined
+    at repl:1:1
+    at sigintHandlersWrap (vm.js:22:35)
+    at sigintHandlersWrap (vm.js:96:12)
+    at ContextifyScript.Script.runInThisContext (vm.js:21:12)
+    at REPLServer.defaultEval (repl.js:313:29)
+    at bound (domain.js:280:14)
+    at REPLServer.runBound [as eval] (domain.js:293:12)
+    at REPLServer.<anonymous> (repl.js:513:10)
+    at emitOne (events.js:101:20)
+    at REPLServer.emit (events.js:188:7)
+
+```
+
+![Bazinga](http://piratevinyldecals.com/wps/wp-content/uploads/2014/04/Bazinga-PV369.png)
+
 
 
