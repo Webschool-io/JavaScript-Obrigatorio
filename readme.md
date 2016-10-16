@@ -31,8 +31,21 @@ for (var i = 0; i < rr.length; i++) {
 }
 ```
 
+*Se você ja manja dos paranaues aguarde um pouco.*
+
 Percebeu que para executarmos o `for` precisamos, basicamente, de 3 coisas:
 
+- instanciaçao: `var i = 0`
+- teste lógico: `i < rr.length`
+- contador: `i++`
 
+> Primeiramente quero deixar claro que eles **nao sao obrigatório**, como veremos abaixo:
+
+
+```js
+for (var i = 0; i < rr.length; i++) {
+  console.log(rr[i]);
+}
+```
 
 
