@@ -9,7 +9,7 @@ Primeiramente quero perguntar para você:
 > Quais sao as funções que o JavaScript nos provê para isso?
 
 
-**Vamos iniciar pelo mundialmente reconhecido...** 
+**Vamos iniciar pelo mundialmente reconhecido...**
 
 ![](http://imguol.com/c/noticias/2014/09/30/comediante-e-deputado-federal-tiririca-pr-sp-1412101756570_956x500.jpg)
 
@@ -21,7 +21,7 @@ Primeiramente quero perguntar para você:
 
 > Sim o `for` significa **para** ou para cada faça.
 
-Entao pela lógica ele ira executar algo para cada iteraçao, correto? 
+Entao pela lógica ele ira executar algo para cada iteraçao, correto?
 
 > *Talk is cheap, show me the code!*
 
@@ -86,7 +86,7 @@ undefined
 > i
 5
 > WTF?
-... 
+...
 ```
 
 ![Bazinga](http://piratevinyldecals.com/wps/wp-content/uploads/2014/04/Bazinga-PV369.png)
@@ -94,7 +94,7 @@ undefined
 
 > **Mas tenho boas notícias!**
 
-> No ES6 isso nao acontece mais se usarmos o `let`. 
+> No ES6 isso nao acontece mais se usarmos o `let`.
 
 
 ```js
@@ -184,7 +184,52 @@ quatro
 
 ## map
 
+O método `map` serve para **transformar** um array em um novo array com
+o **mesmo tamanho** (_length_), mas com novos dados.
 
+A assinatura do método `map` é exatamente a mesma do `forEach`: Ele
+sempre recebe uma função de _callback_ que é executada a cada iteração,
+até que todos os itens do array sejam iterados.
 
+Ao final da iteração, o método `map` retorna um novo array. Cada item
+desse novo array será construído a partir do retorno da função de
+_callback_ passada.
 
+Complicado? Nem tanto =)
 
+Vamos ver um exemplo:
+
+Temos um array de números - `[1, 2, 3]` - e queremos um novo array que
+adicione `1` a cada item desse array. Podemos fazer isso utilizando o
+método `map`:
+
+```js
+const array = [1, 2, 3]
+const newArray = array.map((number) => {
+  return number + 1
+})
+
+console.log(newArray) // [2, 3, 4]
+```
+
+Olha só que simples! A função de _callback_ passada para o método `map`
+return o primieiro parâmetro que ela recebe + 1.
+
+Esses parâmetros são passados a cada iteração pelo método `map`. Além
+do item que está sendo iterado, o método `map` ainda passa outros dois
+parâmetros que podem ser usados nessa função:
+
+- o primeiro parâmetro é o item que está sendo iterado;
+- o segundo parâmetro é o índice do item sendo iterado;
+- e o terceiro parâmetro é o array original, que está sendo iterado.
+
+Fica muito claro que você pode usar o item que está sendo iterado e/ou
+o seu índice para transformar o array em um novo.
+
+Mas por que usar o terceiro parâmetro, já que você pode ter acesso
+direto ao array que está sendo iterado através de uma variável
+(no exemplo, a variável `array`)?
+
+Bom, vai fazer sentido quando entendermos sobre o próximo método: o `filter`.
+
+## filter
