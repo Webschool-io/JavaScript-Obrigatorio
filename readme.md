@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JavaScript OBRIGATÓRIO!!!
 
 Esse conteúdo tende a ser uma coleção **bem explicada** para todo programador JavaScript, com conteúdos que ele é **obrigado** a saber e não pode mais dar desculpas que não tem onde aprender.
