@@ -2,9 +2,7 @@
 
 Poucos programadores utilizam operações com bits, na maioria das vezes por não ter o conhecimento necessário.
 
-Você que faz sistemas normais raramente irá utilizar essas técnicas que veremos a seguir, mas é de suma importância saber!
-
-Porém como você **deve** ser um programador eu não vou lhe explicar  que faz, quero que você **DEDUZA** (sem olhar na documentação né!).
+Como você **deve** ser um programador eu não vou lhe explicar, quero que você **DEDUZA** (sem olhar na documentação né!).
 
 Antes de tudo preciso lhe ensinar como visualizar o valor de um número em bits:
 
@@ -62,4 +60,5 @@ Analise novamente essa sequência focando apenas nos valores binários:
 
 > Ficou fácil né?!
 
-> Vou dar uma colher de chá e *"explicar"* o que aconteceu
+
+**Agora quero que você envie um PULL REQUEST com a sua resposta.**
