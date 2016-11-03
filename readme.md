@@ -8,5 +8,5 @@ Como os conteúdos são bem básicos eles serão explicados como funcionam e em 
 
 ## Índice
 
-- [Iteração em Arrays]()
+- [Iteração em Arrays](https://github.com/Webschool-io/JavaScript-Obrigatorio/blob/master/docs/iteracao-arrays.md)
 - [Operações com bits]()
