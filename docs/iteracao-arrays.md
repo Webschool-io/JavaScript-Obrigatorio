@@ -236,4 +236,6 @@ direto ao array que está sendo iterado através de uma variável
 
 Bom, vai fazer sentido quando entendermos sobre o próximo método: o `filter`.
 
-## filter
+### Map - Como criá-lo manualmente
+
+**Para saber como criar seu próprio `map` para fins de estudo [entre aqui no nosso material do JS Funcional](https://github.com/Webschool-io/workshop-js-funcional-free/blob/master/examples/map.md).**
